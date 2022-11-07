@@ -18,7 +18,7 @@
 body {
     background: fixed;
     background-color: black;
-    background-image: url(../../../Downloads/Rock-pap-sci.jpg);
+    background-image: url(./Images/Rock-pap-sci.jpg);
     background-repeat: no-repeat;
     background-position-y: center;
 }
@@ -53,7 +53,7 @@ button {
 }
 
 .box .boxes .rock {
-    background-image: url("../../../Downloads/rock-gesture.svg");
+    background-image: url("./Images/rock-gesture.svg");
     background-repeat: no-repeat;
     background-position: top;
     background-position-y: 15%;
@@ -62,7 +62,7 @@ button {
 }
 
 .box .boxes .paper {
-    background-image: url("../../../Downloads/toilet-paper-solid.svg");
+    background-image: url("./Images/toilet-paper-solid.svg");
     background-repeat: no-repeat;
     background-position: top;
     background-position-y: 15%;
@@ -71,7 +71,7 @@ button {
 }
 
 .box .boxes .scissors {
-    background-image: url("../../../Downloads/hand-scissors.svg");
+    background-image: url("./Images/hand-scissors.svg");
     background-repeat: no-repeat;
     background-position: top;
     background-position-y: 15%;
@@ -98,6 +98,10 @@ button .rock, .paper, .scissors {
     display: flex;
     flex-direction: column;
     padding-top: 5rem;
+}
+
+button:active {             /*Changes background color when clicked*/
+    background-color:rgb(255, 174, 0);
 }
 
 .boxes {
