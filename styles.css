@@ -30,9 +30,11 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
-    color: chocolate;
+    color: blue;
+
+
 }
 
 header p {
@@ -57,10 +59,7 @@ button {
     max-width: 100%;
 }
 
-@media (max-width: 80%) {
-    button {
-    }
-}
+
 
 .box .boxes .rock {
     background-image: url("./Images/rock-gesture.svg");
@@ -86,10 +85,6 @@ button {
     background-position: top;
     background-position-y: 15%;
     background-size: 50%;
-
-}
-button .rock, .paper, .scissors {
-
 }
 .rock, .paper, .scissors {
     display: flex;
@@ -115,11 +110,16 @@ button:active {             /*Changes background color when clicked*/
     background-color:rgb(255, 174, 0);
 }
 
+button:hover {
+    transform: scale(1.2);
+}
+
 .boxes {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 1rem;
+    transition: 1000ms;
 }
 
 .box .score {
@@ -133,4 +133,8 @@ button:active {             /*Changes background color when clicked*/
     width: 7.75rem;
     height: 3.5rem;
     margin-top: 2rem;
+}
+
+.box .boxes .selection:hover {
+    cursor: crosshair;
 }
