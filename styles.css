@@ -61,7 +61,7 @@ button {
 
 
 
-.box .boxes .rock {
+.box .selections .rock {
     background-image: url("./Images/rock-gesture.svg");
     background-repeat: no-repeat;
     background-position: top;
@@ -70,7 +70,7 @@ button {
 
 }
 
-.box .boxes .paper {
+.box .selections .paper {
     background-image: url("./Images/toilet-paper-solid.svg");
     background-repeat: no-repeat;
     background-position: top;
@@ -79,7 +79,7 @@ button {
 
 }
 
-.box .boxes .scissors {
+.box .selections .scissors {
     background-image: url("./Images/hand-scissors.svg");
     background-repeat: no-repeat;
     background-position: top;
@@ -114,7 +114,7 @@ button:hover {
     transform: scale(1.2);
 }
 
-.boxes {
+.selections {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -135,6 +135,14 @@ button:hover {
     margin-top: 2rem;
 }
 
-.box .boxes .selection:hover {
+.box .selections .selection:hover {
     cursor: crosshair;
+}
+
+.result-selection {
+    opacity: .5;
+}
+
+.result-selection.winner {
+    opacity: 1;
 }

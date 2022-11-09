@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
         <link rel="stylesheet" href="styles.css">
 
         <title>Rock, Paper, Scissors</title>
@@ -14,21 +15,24 @@
         <section class="game">
             <div class="box box1">
                 <h2 class="human">Human</h2>
-                <div class="boxes">                           
+                <div class="selections">                           
                         <button class="rock selection" data-selection="rock">Rock</button>                                       
                         <button class="paper selection" data-selection="paper">Paper</button>                                       
                         <button class="scissors selection" data-selection="scissors">Scissors</button>                    
                 </div>
-                <div class="score"><span class="result-score">0</span></div>
+                <div class="score"><span class="result-score" data-your-score>0</span></div>
             </div>
             <div class="box box2">
                 <h2 class="computer">Computer</h2>
-                    <div class="boxes">                           
-                        <button class="rock selection" data-selection="rock2">Rock</button>
-                        <button class="paper selection" data-selection="paper2">Paper</button>
-                        <button class="scissors selection" data-selection="scissors2">Scissors</button>                    
+                    <div class="selections">                           
+                        <button class="rock selection" data-selection="rock">Rock</button>
+                        <button class="paper selection" data-selection="paper">Paper</button>
+                        <button class="scissors selection" data-selection="scissors">Scissors</button>                    
                 </div>
-                <div class="score"><span class="result-score">0</span></div>
+                <div class="score"><span class="result-score" data-computer-score>0</span></div>
+                <div class="result-selection winner">✊</div>
+                <div class="result-selection">✌</div>
+                <div data-final-column></div>
             </div>
         </section>
         <script src="java.js"></script>
